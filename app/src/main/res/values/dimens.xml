@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="login_text_font_size">16sp</dimen>
-    <dimen name="app_title_first_name_font_size">24sp</dimen>
-    <dimen name="app_title_last_name_font_size">12sp</dimen>
+    <dimen name="login_text_font_size">20sp</dimen>
+    <dimen name="splash_first_name_font_size">26sp</dimen>
+    <dimen name="splash_last_name_font_size">14sp</dimen>
 </resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".controllers.SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:animateLayoutChanges="true"
+        android:paddingTop="15dp">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/walkitive_recorder_logo"
+            android:layout_width="105dp"
+            android:layout_height="192.85dp"
+            android:src="@drawable/splash_icon"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/app_title_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/century_gothic"
+            android:text="@string/walkitive"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/walkitive_recorder_text_color"
+            android:textSize="@dimen/splash_first_name_font_size"
+            android:layout_below="@id/walkitive_recorder_logo" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/app_title_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="@string/recorder"
+            android:layout_marginBottom="29dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/walkitive_recorder_text_color"
+            android:textSize="@dimen/splash_last_name_font_size"
+            android:layout_below="@id/app_title_first_name" />
+
+
+        <LinearLayout
+            android:id="@+id/login_fields_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_title_last_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="46dp"
+            android:layout_marginStart="46dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/login_input_username"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/text_field"
+                android:fontFamily="@font/helvetica"
+                android:hint="@string/login_input_username_hint"
+                android:inputType="text"
+                android:paddingStart="11dp"
+                android:textColorHint="@color/login_input_hint_text_color"
+                android:textSize="@dimen/login_text_font_size" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/login_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="16.65dp"
+                android:background="@drawable/text_field"
+                android:fontFamily="@font/helvetica"
+                android:hint="@string/login_input_password_hint"
+                android:inputType="textPassword"
+                android:paddingStart="11dp"
+                android:paddingTop="0dp"
+                android:textColorHint="@color/login_input_hint_text_color"
+                android:textSize="@dimen/login_text_font_size"
+                app:layout_constraintTop_toBottomOf="@+id/login_input_username" />
+
+            <Button
+                android:id="@+id/login_send_button"
+                android:layout_width="match_parent"
+                android:layout_height="43.5dp"
+                android:layout_marginTop="40.6dp"
+                android:background="@drawable/login_send_button_border"
+                android:text="@string/login_input_button_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/login_text_font_size"
+                app:layout_constraintTop_toBottomOf="@+id/login_input_password" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
