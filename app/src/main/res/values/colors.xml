@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#477d8a</color>
+    <color name="colorPrimary">#477D8A</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#555</color>
 
@@ -8,6 +8,7 @@
 
     <color name="login_input_hint_text_color">#d6d6d6</color>
     <color name="white">#fff</color>
-    <color name="login_send_button_text_color">#477d8a</color>
     <color name="walkitive_recorder_text_color">#959595</color>
+    <color name="add_address_toolbar_background_color">#faf9f1</color>
+    <color name="display_current_location_address_text_color">#959595</color>
 </resources>

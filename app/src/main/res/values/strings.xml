@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">Walkitive Recorder</string>
 
     <string name="login_input_username_hint">Username</string>
@@ -6,4 +7,7 @@
     <string name="login_input_button_text">Login</string>
     <string name="walkitive">WALKITIVE</string>
     <string name="recorder">RECORDER</string>
+
+    <string name="current_location_indicator">You are here</string>
+    <string name="recentre_map_to_current_location">recentre map to current location</string>
 </resources>

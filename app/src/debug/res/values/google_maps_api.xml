@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=D6:A2:AB:2B:C5:AF:7E:DF:E3:0E:4C:FC:06:70:B4:54:F2:37:B7:56%3Bcom.example.abhay.walkitiverecorder.controllers
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    D6:A2:AB:2B:C5:AF:7E:DF:E3:0E:4C:FC:06:70:B4:54:F2:37:B7:56
+
+    SHA-1 certificate fingerprint:
+    D6:A2:AB:2B:C5:AF:7E:DF:E3:0E:4C:FC:06:70:B4:54:F2:37:B7:56
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDZ3laTaqGDUO7NAt4YN68wM9wSVrUPYXE</string>
+</resources>

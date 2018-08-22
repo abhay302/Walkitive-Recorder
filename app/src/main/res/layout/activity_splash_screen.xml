@@ -86,11 +86,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/login_input_username" />
 
             <Button
-                android:id="@+id/login_send_button"
+                android:id="@+id/login_button"
                 android:layout_width="match_parent"
                 android:layout_height="43.5dp"
                 android:layout_marginTop="40.6dp"
-                android:background="@drawable/login_send_button_border"
+                android:background="@drawable/login_button_border"
                 android:text="@string/login_input_button_text"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"

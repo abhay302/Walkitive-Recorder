@@ -25,6 +25,7 @@ captures/
 *.iml
 .idea/
 
+
 .DS_Store
 /build
 .externalNativeBuild

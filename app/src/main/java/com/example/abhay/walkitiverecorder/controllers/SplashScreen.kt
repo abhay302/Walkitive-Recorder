@@ -1,5 +1,6 @@
 package com.example.abhay.walkitiverecorder.controllers
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
@@ -20,10 +21,15 @@ class SplashScreen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         login_fields_container.visibility = View.GONE
+        startActivity(Intent(this@SplashScreen, HomeDrawerActivity::class.java))
         Timer().schedule(object : TimerTask() {
             override fun run() {
                 Handler(mainLooper).post {
                     login_fields_container.visibility = View.VISIBLE
+
+                    login_button.setOnClickListener {
+                        startActivity(Intent(this@SplashScreen, HomeDrawerActivity::class.java))
+                    }
                 }
             }
         }, 1000)
