@@ -74,13 +74,18 @@ class DisplayLocationFragment : Fragment(), OnMapReadyCallback {
         if (ContextCompat.checkSelfPermission(activity!!.applicationContext, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             fusedLocationClient.lastLocation.addOnSuccessListener { location ->
                 val position = LatLng(location.latitude, location.longitude)
-                googleMap?.addMarker(MarkerOptions().position(position)
-                        .title(getString(R.string.current_location_indicator)).icon(BitmapDescriptorFactory.fromResource(R.drawable.add_spot_marker)))
+                googleMap?.addMarker(MarkerOptions().icon(BitmapDescriptorFactory
+                        .fromResource(R.drawable.add_spot_marker))
+                        .title("You are here")
+                        .position(position))
                 googleMap?.animateCamera(CameraUpdateFactory.newLatLngZoom(position, 18.0f))
-                getAddressFromLocation(location.latitude, location.longitude)
 
                 button_go_to_current_location.setOnClickListener {
                     googleMap?.animateCamera(CameraUpdateFactory.newLatLngZoom(position, 18.0f))
+                }
+
+                googleMap?.setOnCameraIdleListener {
+                    getAddressFromLocation(googleMap.cameraPosition.target)
                 }
             }
         } else {            //TODO work
@@ -88,13 +93,13 @@ class DisplayLocationFragment : Fragment(), OnMapReadyCallback {
         }
     }
 
-    private fun getAddressFromLocation(latitude: Double, longitude: Double) {
+    private fun getAddressFromLocation(location: LatLng) {
 
         val geocoder = Geocoder(activity, Locale.getDefault())
 
 
         try {
-            val addresses = geocoder.getFromLocation(latitude, longitude, 1)
+            val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
 
             if (addresses.size > 0) {
                 val fetchedAddress = addresses[0]
@@ -107,7 +112,7 @@ class DisplayLocationFragment : Fragment(), OnMapReadyCallback {
                 add_spot_toolbar.display__current_location_address.text = strAddress
 
             } else {
-                Toast.makeText(activity, "Searching Current Address", Toast.LENGTH_LONG).show()
+                Toast.makeText(activity, "Address not found", Toast.LENGTH_LONG).show()
             }
 
         } catch (e: IOException) {

@@ -35,7 +35,7 @@
             android:inputType="textMultiLine"
             android:maxLines="3"
             android:padding="0dp"
-            android:text="Your address will be displayed here jgvhaghvhgcfcgcgcgcfccfcgcgcgcgcgffcgcfgcfcgfcgcgcgfcgcgfcgcgcgcgcgcgfcgfcgcfcgcakhiauhbnhcbh"
+            android:text="Your address will be displayed here\n\n"
             android:textColor="@color/display_current_location_address_text_color"
             android:textSize="18sp"
             app:autoSizeMaxTextSize="18sp"
