@@ -10,4 +10,6 @@
 
     <string name="current_location_indicator">You are here</string>
     <string name="recentre_map_to_current_location">recentre map to current location</string>
+    <string name="spot_name_hint">Name</string>
+    <string name="spot_description_hint">Description</string>
 </resources>

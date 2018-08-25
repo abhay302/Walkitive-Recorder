@@ -1,9 +1,10 @@
-package com.example.abhay.walkitiverecorder.controllers
+package com.example.abhay.walkitiverecorder.controllers.home
 
 import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.AppCompatActivity
 import com.example.abhay.walkitiverecorder.R
+import com.example.abhay.walkitiverecorder.controllers.spot.MapFragment
 import kotlinx.android.synthetic.main.activity_home_drawer.*
 import kotlinx.android.synthetic.main.toolbar_main.view.*
 
@@ -25,7 +26,7 @@ class HomeDrawerActivity : AppCompatActivity() {
         }
 
         with(supportFragmentManager.beginTransaction()) {
-            add(R.id.fragment_container, DisplayLocationFragment())
+            add(R.id.fragment_container, MapFragment())
             commit()
         }
 
@@ -33,7 +34,7 @@ class HomeDrawerActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.item_trips -> {
                     with(supportFragmentManager.beginTransaction()) {
-                        add(R.id.fragment_container, DisplayLocationFragment())
+                        add(R.id.fragment_container, MapFragment())
                         commit()
                     }
                     true

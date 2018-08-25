@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controllers.DisplayLocationFragment">
+    tools:context=".controllers.spot.MapFragment"
+    android:transitionName="add_spot"
+    android:id="@+id/display_location_fragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -32,17 +34,19 @@
             android:src="@drawable/go_to_current" />
 
         <ImageView
+            android:id="@+id/spot_marker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="65dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/add_spot_marker" />
+            android:src="@drawable/add_spot_marker"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
     </RelativeLayout>
 
     <include
         android:id="@+id/add_spot_toolbar"
-        layout="@layout/toolbar_add_address"
+        layout="@layout/toolbar_add_spot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"></include>
 </RelativeLayout>

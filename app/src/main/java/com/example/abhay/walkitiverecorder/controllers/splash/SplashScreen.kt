@@ -1,4 +1,4 @@
-package com.example.abhay.walkitiverecorder.controllers
+package com.example.abhay.walkitiverecorder.controllers.splash
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.example.abhay.walkitiverecorder.R
+import com.example.abhay.walkitiverecorder.controllers.home.HomeDrawerActivity
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 import java.util.*
 

@@ -2,49 +2,64 @@
 <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="48dp"
-    android:contentInsetStart="0dp"
-    android:minHeight="?android:attr/actionBarSize">
+    android:layout_height="60dp"
+    android:background="@color/add_address_toolbar_background_color"
+    android:contentInsetStart="0dp">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <android.support.v7.widget.AppCompatImageView
-            android:id="@+id/appCompatImageView"
-            android:layout_width="19dp"
-
-            android:layout_height="32dp"
+            android:id="@+id/marker_icon"
+            android:layout_width="21.6dp"
+            android:layout_height="49.3dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginStart="14dp"
+            android:layout_marginStart="17dp"
             android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/marker_icon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="14dp"
-            android:text="Le Centre Sheraton Montreal"
-            android:textColor="#959595"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            android:id="@+id/display_location_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="58.56dp"
+            android:layout_marginStart="58.56dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="0dp"
+            android:text="Your address will be displayed here\n\n"
+            android:textColor="@color/display_current_location_address_text_color"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeMinTextSize="16sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent" />
 
         <ImageButton
-            android:layout_width="47dp"
-            android:layout_height="39dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:paddingStart="5.8dp"
+            android:id="@+id/action_button"
+            android:layout_width="57.34dp"
+            android:layout_height="48.75dp"
+            android:scaleType="fitXY"
             android:background="@drawable/border_left"
-            android:src="@drawable/ic_cancel_spot"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="13.8dp"
+            android:paddingStart="13.8dp"
+            android:src="@drawable/plus"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </android.support.constraint.ConstraintLayout>
 
 </Toolbar>
