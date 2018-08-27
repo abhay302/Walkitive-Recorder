@@ -93,7 +93,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
                         putExtra("location", googleMap.cameraPosition.target)
                     }
                     val options: ActivityOptions = ActivityOptions.makeSceneTransitionAnimation(activity,
-                            Pair.create(add_spot_toolbar, "spot"))
+                            Pair.create(add_spot_toolbar, "add_spot"))
                     startActivity(intent, options.toBundle())
                     //startActivity(sharedIntent)
                 }

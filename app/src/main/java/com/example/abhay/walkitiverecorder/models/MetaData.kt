@@ -7,5 +7,8 @@ data class MetaData(
         var total_pages: Int? = null,
 
         @SerializedName("total_spots")
-        var total_spots: Int? = null
+        var total_spots: Int? = null,
+
+        @SerializedName("total_trips")
+        var total_trips: Int? = null
 )

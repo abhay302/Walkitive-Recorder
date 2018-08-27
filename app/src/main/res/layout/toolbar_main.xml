@@ -11,17 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/menu_icon"
-        android:id="@+id/menu_icon"
+        android:id="@+id/main_toolbar_menu_icon"
         android:background="@null"
         android:paddingEnd="10dp" />
 
     <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/main_toolbar_icon"
         android:layout_width="28.4dp"
         android:layout_height="50dp"
         android:layout_marginStart="0dp"
         android:src="@drawable/recorder_icon" />
 
     <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/main_toolbar_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"

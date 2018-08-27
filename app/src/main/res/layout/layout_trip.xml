@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingEnd="13dp">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/trip_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:padding="0dp"
+        android:scaleType="center"
+        android:src="@drawable/image_placeholder" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/trip_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="7dp"
+        android:text="Trip Name"
+        app:layout_constraintStart_toEndOf="@id/trip_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/trip_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Trip Description"
+        app:layout_constraintStart_toEndOf="@id/trip_image"
+        app:layout_constraintTop_toBottomOf="@id/trip_name" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/trip_spots_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="11dp"
+        android:maxLines="1"
+        android:text="4spots"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trip_image" />
+
+    <ImageView
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="75dp"
+        android:src="@drawable/oval_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trip_image"
+        tools:ignore="ContentDescription" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/trip_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="100dp"
+        android:text="40 mins"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trip_image" />
+
+    <ImageView
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="164dp"
+        android:src="@drawable/oval_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trip_image"
+        tools:ignore="ContentDescription" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/trip_total_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="191dp"
+        android:text="2 kms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trip_image" />
+
+</android.support.constraint.ConstraintLayout>
